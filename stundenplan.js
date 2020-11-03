@@ -34,6 +34,9 @@ async function createWidget() {
     wimg.rightAlignImage()
     widget.addSpacer()
 
+    let row = widget.addStack()
+    row.layoutHorizontally()
+
     let column = row.addStack()
     column.layoutVertically()
 
