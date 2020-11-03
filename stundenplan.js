@@ -97,8 +97,8 @@ async function nextLesson() {
 
     return {
         lesson: lessons.flat()[index],
-        remaining: labelTime(times[index]),
-        time: `${(times[index]/60) | 0}:${times[index] % 60}`,
+        remaining: labelTime(times[dayIndex]),
+        time: `${(times[dayIndex]/60) | 0}:${times[dayIndex] % 60}`,
     }
 }
 
